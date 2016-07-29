@@ -1,0 +1,25 @@
+diff --git a/src/fe-gtk/menu.c b/src/fe-gtk/menu.c
+index 7bfeee0..2eb015f 100644
+--- a/src/fe-gtk/menu.c
++++ b/src/fe-gtk/menu.c
+@@ -1749,7 +1749,7 @@ static struct mymenu mymenu[] = {
+ 	{0, 0, 0, M_SEP, 0, 0, 0},
+
+ 	{N_("_New"), 0, GTK_STOCK_NEW, M_MENUSUB, 0, 0, 1},
+-		{N_("Server Tab..."), menu_newserver_tab, 0, M_MENUITEM, 0, 0, 1, GDK_KEY_t},
++		{N_("Server Tab..."), menu_newserver_tab, 0, M_MENUITEM, 0, 0, 1},
+ 		{N_("Channel Tab..."), menu_newchannel_tab, 0, M_MENUITEM, 0, 0, 1},
+ 		{N_("Server Window..."), menu_newserver_window, 0, M_MENUITEM, 0, 0, 1, GDK_KEY_n},
+ 		{N_("Channel Window..."), menu_newchannel_window, 0, M_MENUITEM, 0, 0, 1},
+@@ -1761,9 +1761,9 @@ static struct mymenu mymenu[] = {
+ #define DETACH_OFFSET (12)
+ 	{0, menu_detach, GTK_STOCK_REDO, M_MENUSTOCK, 0, 0, 1},	/* 12 */
+ #define CLOSE_OFFSET (13)
+-	{0, menu_close, GTK_STOCK_CLOSE, M_MENUSTOCK, 0, 0, 1, GDK_KEY_w},
++	{0, menu_close, GTK_STOCK_CLOSE, M_MENUSTOCK, 0, 0, 1},
+ 	{0, 0, 0, M_SEP, 0, 0, 0},
+-	{N_("_Quit"), menu_quit, GTK_STOCK_QUIT, M_MENUSTOCK, 0, 0, 1, GDK_KEY_q},	/* 15 */
++	{N_("_Quit"), menu_quit, GTK_STOCK_QUIT, M_MENUSTOCK, 0, 0, 1},	/* 15 */
+
+ 	{N_("_View"), 0, 0, M_NEWMENU, 0, 0, 1},
+ #define MENUBAR_OFFSET (17)
