@@ -22,3 +22,14 @@ git clone --recursive https://github.com/Douane/douane-dialog
 cd douane-dialog
 make
 sudo make install
+
+
+cd ~/Douane
+git clone https://github.com/Douane/douane-configurator
+cd douane-configurator
+sudo python3 setup.py install
+
+
+systemctl daemon-reload
+sudo service douane start
+
